@@ -7,7 +7,6 @@ class Order:
     def__init__(self):
         self.product=[]
 
-
     def add_item(self,item):
         self.product.append(item)
     
