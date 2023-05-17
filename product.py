@@ -4,10 +4,10 @@ class Product:
         self.price=price
         self.image=image
         self.quantity=quantity
-        
+
 class Cart:
     def__init__(self):
         self.product=[]
         self.total=0
-    def add_items(self,item): #Enables the client to add items to the cart
+    def add_items(self,item):
         self.product.append(item)
