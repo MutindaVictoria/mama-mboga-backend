@@ -1,5 +1,5 @@
 class Payment:
-    def__init__(self,name,phone_number,account_balance):
+    def __init__(self, name, phone_number, account_balance):
         self.name = name
         self.phone_number = phone_number
         self.account_balance = account_balance
