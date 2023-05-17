@@ -1,11 +1,11 @@
 class Groceries:
-    def__init__(self,name,price):
-        self.name=name
-        self.price=price
+    def __init__(self, names, prices):
+        self.names = names
+        self.prices = prices
 
 class Order:
-    def__init__(self):
-        self.product=[]
+    def __init__(self):
+        self.products = []
 
     def add_item(self,item):
         self.product.append(item)

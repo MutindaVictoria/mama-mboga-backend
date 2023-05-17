@@ -1,13 +1,14 @@
 class Product:
-    def__init__(self,name,price,image,quantity):
+    def __init__(self, name, price, image, quantity):
         self.name = name
-        self.price=price
-        self.image=image
-        self.quantity=quantity
+        self.price = price
+        self.image = image
+        self.quantity = quantity
 
 class Cart:
-    def__init__(self):
-        self.product=[]
-        self.total=0
-    def add_items(self,item):
-        self.product.append(item)
+    def __init__(self):
+        self.products = []
+        self.total = 0
+
+    def add_items(self, item):
+        self.products.append(item)
