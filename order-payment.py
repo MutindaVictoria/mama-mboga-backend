@@ -8,7 +8,7 @@ class Payment:
         print(f"Your Account balance is{self.account_balance}")
     def pay_now(self,total):
         if total>self.account_balance:
-            print(f"Insufficient funds your account balance is{self.account_balance}")
+            print(f" You have insufficient funds  in your account balance to pay{tota}your account balance is:{self.account_balance}")
         else:
             self.account_balance-= total  
-            print(f"Paid!Your new account balance is {self.account_balance}")
+            print(f"You paid {total},your new account balance is {self.account_balance}")
