@@ -9,14 +9,15 @@ class Order:
 
     def add_item(self,item):
         self.product.append(item)
+        return f"The:{item}has been successfully been added to the cart"
     
     def view_cart(self):
         for item in self.product:
-            print(f"The items in the cart are:{self.product}")
+            print(f"The items available in the cart are:{self.product}")
     
     def place_order(self):
         self.total_price=0
         for item in self.product:
             total_price +=item.price
-            print(f" {item.name}  price is:{item.price}")
-            print(f"Total price of {item.name} is:{self.total_price}")
+            print(f"You ordered: {item.name} ,the price is:{item.price}")
+            print(f"The total price for the order is:{self.total_price}")
