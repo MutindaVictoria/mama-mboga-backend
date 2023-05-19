@@ -16,19 +16,14 @@ class Cart:
         if item in self.product:
             self.product.remove(item)
         else:
-            print("Item not found in cart.")
+            print("Item not found in cart,the items in the cart are:{item}")
+
     def get_total_items(self):  # Enables the client to get the total number of items in the cart
-        return len(self.product)
+        return len(f "The itemss in the cart are:{self.product}
 
     def total_amount_of_item(self):  # Enables the client to get the total price of items in cart
         total_price = 0
         for item in self.product:
             total_price += item.price
-        return total_price
+        return f"The total price of items in the cart is:{total_price}"
         
-class Client:
-    def __init__(self, name, email, home_address):
-        self.name = name
-        self.email = email
-        self.home_address = home_address
-        self.cart = Cart()
