@@ -12,11 +12,11 @@ class Order:
     
     def view_cart(self):
         for item in self.product:
-            print(item)
+            print(f"The items in the cart are:{self.product}")
     
     def place_order(self):
         self.total_price=0
         for item in self.product:
             total_price +=item.price
-            print(f"Item Name:{item.name}Price:{item.price}")
-            print(f"Total Price:{self.total_price}")
+            print(f" {item.name}  price is:{item.price}")
+            print(f"Total price of {item.name} is:{self.total_price}")
