@@ -12,14 +12,14 @@ class Client:
         password = input("Enter your password:")
         home_address = input("Enter your home_address")
         client = Client(name,phone_number,email,password,home_address)
-        return client
+        return f"The sign-up process has been successfully completed"
     def log_in(clients):
         email = input("Enter your email:")
         password = input("Enter your password:")
         for client in clients:
             if client.email==email and client.password==password:
-                print("logging in was successful")
+                print("Login was successful")
                 
             else:
-                print("logging in was not unsuccessful ,try again.")
+                print("Login in was not unsuccessful ,try again.")
                 
